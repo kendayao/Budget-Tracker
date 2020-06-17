@@ -47,7 +47,7 @@ request.onupgradeneeded = function(event) {
             
             const transaction = db.transaction(["pending"], "readwrite");
             const pendingStore = transaction.objectStore("pending");
-            store.clear();
+            pendingStore.clear();
           });
         }
       };
