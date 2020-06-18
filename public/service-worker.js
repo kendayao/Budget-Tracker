@@ -1,3 +1,4 @@
+// static files to cache
 const FILES_TO_CACHE = [
     "/",
     "/index.html",
@@ -9,10 +10,11 @@ const FILES_TO_CACHE = [
     "/icons/icon-512x512.png"
   ];
 
+// cache names
 const CACHE_NAME = "static-cache-v3";
 const DATA_CACHE_NAME = "data-cache-v1";
 
-// install
+// install caceh and adds static files to cache
 self.addEventListener("install", function(evt) {
     evt.waitUntil(
       caches.open(CACHE_NAME).then(cache => {
@@ -24,6 +26,7 @@ self.addEventListener("install", function(evt) {
     self.skipWaiting();
   });
   
+//   activate service worker and removes old data from cache
   self.addEventListener("activate", function(evt) {
     evt.waitUntil(
       caches.keys().then(keyList => {
@@ -41,7 +44,7 @@ self.addEventListener("install", function(evt) {
     self.clients.claim();
   });
   
-  // fetch
+  // fetch to store api responses and request to cache
   self.addEventListener("fetch", function(evt) {
     if (evt.request.url.includes("/api/")) {
       evt.respondWith(
@@ -61,6 +64,7 @@ self.addEventListener("install", function(evt) {
       return;
     }
   
+    // if not a API request, open up static cache and serve files being requested
     evt.respondWith(
       caches.match(evt.request).then(function(response) {
         return response || fetch(evt.request);
