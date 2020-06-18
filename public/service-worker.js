@@ -2,14 +2,14 @@ const FILES_TO_CACHE = [
     "/",
     "/index.html",
     "/manifest.webmanifest",
-    "/styles.css,",
+    "/styles.css",
     "/index.js",
     "/db.js",
     "/icons/icon-192x192.png",
-    "/icons/icon-512x512.png",
+    "/icons/icon-512x512.png"
   ];
 
-const CACHE_NAME = "static-cache-v2";
+const CACHE_NAME = "static-cache-v3";
 const DATA_CACHE_NAME = "data-cache-v1";
 
 // install
@@ -51,7 +51,6 @@ self.addEventListener("install", function(evt) {
               if (response.status === 200) {
                 cache.put(evt.request.url, response.clone());
               }
-  
               return response;
             })
             .catch(err => {
@@ -59,7 +58,6 @@ self.addEventListener("install", function(evt) {
             });
         }).catch(err => console.log(err))
       );
-  
       return;
     }
   
