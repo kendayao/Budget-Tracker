@@ -66,4 +66,4 @@ For any questions, please contact kendayao at kendayao@gmail.com
 
 Deployed application link: 
 
-<img src="public/images/budgetapp.png" width="300" height="300">
+<img src="public/images/budgetapp.png" width="450" height="400">
