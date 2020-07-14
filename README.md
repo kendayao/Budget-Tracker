@@ -64,6 +64,6 @@ For any questions, please contact kendayao at kendayao@gmail.com
 
 ## Deployed Application URL
 
-Deployed application link: https://tranquil-oasis-41593.herokuapp.com/
+Deployed application link: https://benefique-monsieur-43566.herokuapp.com/
 
 <img src="public/images/budgetapp.png" width="450" height="400">
