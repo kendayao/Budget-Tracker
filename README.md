@@ -2,11 +2,12 @@
 
 ## Description
 
-This is a budget-tracker application. Users can keep track of their budget by adding deposits and subtracting expenses. This app can be downloaded via desktop or mobile and be used offline. This application was created using MongoDB, Mongoose, Node, Express, Javascript, Jquery, HTML, CSS, PWA, and IndexedDB.
+Budget Tracker is a progressive web application. Users can keep track of their budget by adding deposits and subtracting expenses. Since this is a progressive web application, this web app provides a native app feel as it can be downloaded via desktop or mobile and be used offline. 
 
 ## Table of Contents
 
 * [Description](#description)
+* [Technology](#technology)
 * [User Story](#user-story)
 * [Installation](#installation)
 * [Usage](#usage)
@@ -16,6 +17,19 @@ This is a budget-tracker application. Users can keep track of their budget by ad
 * [Questions](#questions)
 * [Deployed Application URL](#deployed-application-URL)
 
+## Technology
+
+- HTML
+- CSS
+- MongoDB
+- Node
+- Express
+- JavaScript
+- jQuery
+- IndexDB
+- Cache Storage
+- Manifest
+- Service Worker
 
 
 ## User Story
@@ -65,5 +79,7 @@ For any questions, please contact kendayao at kendayao@gmail.com
 ## Deployed Application URL
 
 Deployed application link: https://benefique-monsieur-43566.herokuapp.com/
+
+Video application link: https://giphy.com/gifs/W0Wj19NGBzeum17nX0/fullscreen
 
 <img src="public/images/budgetapp.png" width="450" height="400">
